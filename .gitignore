@@ -64,4 +64,4 @@ typings/
 *.tsbuildinfo
 
 #ignorar el datasource
-src/datasources/mongo.datasources.ts
+src/datasources/mongo.datasource.ts
