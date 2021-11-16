@@ -1,3 +1,6 @@
+#ignorar el datasource
+src/datasources/mongo.datasource.ts
+
 # Logs
 logs
 *.log
