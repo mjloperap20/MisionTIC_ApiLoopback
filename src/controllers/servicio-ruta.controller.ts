@@ -1,17 +1,17 @@
+import {authenticate} from '@loopback/authentication';
 import {
-  repository,
+  repository
 } from '@loopback/repository';
 import {
-  param,
   get,
-  getModelSchemaRef,
+  getModelSchemaRef, param
 } from '@loopback/rest';
 import {
-  Servicio,
-  Ruta,
+  Ruta, Servicio
 } from '../models';
 import {ServicioRepository} from '../repositories';
 
+@authenticate("admin")
 export class ServicioRutaController {
   constructor(
     @repository(ServicioRepository)
